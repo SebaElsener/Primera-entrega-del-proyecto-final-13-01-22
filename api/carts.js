@@ -9,7 +9,7 @@ class Cart {
   }
 
   // método adicional para guardar datos
-  saveData = async (data) => {
+  async saveData(data) {
     try {
       await fs.promises.writeFile(this.newFile, JSON.stringify(data, null, 2))
     } catch (err) {
@@ -17,7 +17,7 @@ class Cart {
     }
   }
 
-  save = async () => {
+  async save() {
     // Traer todos los carritos usando el método getAll.
     // Si es undefined porque no existe el archivo asigna un array vacío a través
     // del operador || para que length no de error
@@ -37,7 +37,7 @@ class Cart {
     }
   }
 
-  getCartById = async (id) => {
+  async getCartById(id) {
     const cartsArray = (await this.getAll()) || []
     try {
       const cartById = cartsArray.find((cart) => cart.id === id)
@@ -47,7 +47,7 @@ class Cart {
     }
   }
 
-  getAll = async () => {
+  async getAll() {
     try {
       const content = await fs.promises.readFile(this.newFile)
       const contentArray = JSON.parse(content)
@@ -58,7 +58,7 @@ class Cart {
     }
   }
 
-  addProductById = async (cartId, productId) => {
+  async addProductById(cartId, productId) {
     try{
         const foundProduct = await products.getById(productId)
         if (foundProduct !== null) {
@@ -75,7 +75,7 @@ class Cart {
     }
   }
 
-  deleteProductById = async (cartId, productId) => {
+  async deleteProductById(cartId, productId) {
     try{
         const cartsArray = await this.getAll() || []
         const cartToUpdate = cartsArray.findIndex(cart => cart.id === cartId)
@@ -92,7 +92,7 @@ class Cart {
     }
   }
  
-  deleteCartById = async (id) => {
+  async deleteCartById(id) {
     try {
       const cartsArray = (await this.getAll()) || []
       const cartToUpdate = cartsArray.findIndex(cart => cart.id === id)

@@ -17,5 +17,5 @@ Muestra todos los carritos guardados.  Haciendo click en *Agregar carrito* se pu
 * El puerto de escucha para glitch es *process.env.PORT*.
 * Todos los métodos *get, post, put y delete* son enviados utilizando *fetch*.
 
-### Link al repositorio en GitHub: 
-### Link al repositorio en Glitch: 
+### Link al repositorio en GitHub: https://github.com/SebaElsener/Primera-entrega-del-proyecto-final-13-01-22
+### Link al live site desplegado en Glitch: https://glacier-boatneck-archer.glitch.me/api/productos

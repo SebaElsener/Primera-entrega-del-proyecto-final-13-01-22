@@ -7,7 +7,7 @@ class Contenedor {
   }
 
   // método adicional para guardar datos
-  saveData = async (data) => {
+  async saveData(data) {
     try {
       await fs.promises.writeFile(this.newFile, JSON.stringify(data, null, 2))
     } catch (err) {
@@ -15,7 +15,7 @@ class Contenedor {
     }
   }
 
-  save = async (item) => {
+  async save(item) {
     // Traer todos los productos usando el método getAll.
     // Si es undefined porque no existe el archivo asigna un array vacío a través
     // del operador || para que length no de error
@@ -35,7 +35,7 @@ class Contenedor {
     }
   }
 
-  getById = async (id) => {
+  async getById(id) {
     const productsArray = (await this.getAll()) || [];
     try {
       const productById = productsArray.find((product) => product.id === id)
@@ -45,7 +45,7 @@ class Contenedor {
     }
   }
 
-  getAll = async () => {
+  async getAll() {
     try {
       const content = await fs.promises.readFile(this.newFile)
       const contentArray = JSON.parse(content)
@@ -56,7 +56,7 @@ class Contenedor {
     }
   }
 
-  deleteById = async (id) => {
+  async deleteById(id) {
     const productsArray = (await this.getAll()) || [];
     try {
       const filteredProducts = productsArray.filter(
@@ -68,7 +68,7 @@ class Contenedor {
     }
   }
 
-  deleteAll = async () => {
+  async deleteAll() {
     try {
       this.saveData([]);
       console.log("Productos eliminados!");
