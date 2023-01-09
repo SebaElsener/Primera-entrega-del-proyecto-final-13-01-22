@@ -1,0 +1,87 @@
+[
+  {
+    "product": "Lapiz",
+    "price": "23.75",
+    "stock": "10",
+    "description": "Lapiz para escribir negro",
+    "code": "1234",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/pencil-pen-stationery-school-64.png",
+    "id": 1
+  },
+  {
+    "product": "Escuadra",
+    "price": "12",
+    "stock": "9",
+    "description": "Escuadra 3'",
+    "code": "1235",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-64.png",
+    "id": 2
+  },
+  {
+    "product": "Globo terraqueo mediano",
+    "price": "123",
+    "stock": "55",
+    "description": "Globo terráqueo 15'",
+    "code": "1238",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-64.png",
+    "id": 3
+  },
+  {
+    "product": "Temperas x12",
+    "price": "231",
+    "stock": "12",
+    "description": "Temperas surtidas",
+    "code": "1237",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/paint-color-pallete-brush-academy-64.png",
+    "id": 4
+  },
+  {
+    "product": "Globo terraqueo",
+    "price": "123",
+    "stock": "35",
+    "description": "Globo terráqueo 10'",
+    "code": "1238",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-64.png",
+    "id": 5
+  },
+  {
+    "product": "Anotador",
+    "price": "45",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/paper-clip-academic-note-exam-64.png",
+    "id": 6,
+    "description": "Anotador anillado",
+    "code": "1239",
+    "timestamp": "1672246098090",
+    "stock": "20"
+  },
+  {
+    "product": "Lapiz HB",
+    "price": "12,45",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/pencil-pen-stationery-school-64.png",
+    "id": 7,
+    "description": "Lapiz para pintar",
+    "code": "1240",
+    "timestamp": "1672246098090",
+    "stock": "14"
+  },
+  {
+    "product": "Globo terraqueo vintage",
+    "price": "123",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-64.png",
+    "description": "Globo terráqueo 20'",
+    "code": "1238",
+    "stock": "15",
+    "timestamp": 1672437929681,
+    "id": 9
+  },
+  {
+    "product": "Globo terraqueo chico",
+    "price": "123",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-64.png",
+    "description": "Globo terráqueo 5'",
+    "code": "1238",
+    "stock": "55",
+    "timestamp": 1672440015529,
+    "id": 10
+  }
+]
