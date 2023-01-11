@@ -19,4 +19,5 @@ Muestra los productos del carrito guardado.  Se puede eliminar el carrito comple
 * Todos los métodos *get, post, put y delete* son enviados utilizando *fetch*.
 
 ### Link al repositorio en GitHub: https://github.com/SebaElsener/Primera-entrega-del-proyecto-final-13-01-22
-### Link al live site desplegado en Glitch: https://glacier-boatneck-archer.glitch.me/api/productos
+### Link al deploy en Glitch: https://glitch.com/edit/#!/messy-hungry-cairnsmore
+### Link al live site desplegado en Glitch: https://messy-hungry-cairnsmore.glitch.me/api/productos
