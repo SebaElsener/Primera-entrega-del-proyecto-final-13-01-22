@@ -6,12 +6,13 @@ const routeProducts = new router()
 
 const products = new apiProducts('products.txt')
 // Var para habilitar la modificación o alta de productos
-const administrador = true
+const administrador = false
 
 // Renderiza todos los productos y el form de nuevos ingresos
 routeProducts.get('/', async (req, res) => {
     const productsList = await products.getAll()
     res.render('index', {
+        admin: administrador,
         allProducts: productsList,
         productsQty: productsList.length
     })
@@ -65,7 +66,7 @@ routeProducts.delete('/:id', async (req, res) =>{
         await products.deleteById(parseInt(req.params.id))
         deletedId === null
             ? res.json( {'Producto con ID': `${parseInt(req.params.id)} no encontrado`} )
-            : res.json( {'Producto eliminado': deletedId} )
+            : res.json( {'Producto eliminado': deletedId.product} )
     } else {
         res.json({ error : -1, descripcion: 'Sólo administradores' })
     }

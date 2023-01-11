@@ -62,8 +62,13 @@ class Cart {
     try{
         const foundProduct = await products.getById(productId)
         if (foundProduct !== null) {
-            const cartsArray = (await this.getAll()) || []
-            const cartToUpdate = cartsArray.findIndex(cart => cart.id === cartId)
+            let cartsArray = (await this.getAll()) || []
+            let cartToUpdate = cartsArray.findIndex(cart => cart.id === cartId)
+            if (cartToUpdate === -1) {
+              const newCart = await this.save()
+              cartsArray = (await this.getAll()) || []
+              cartToUpdate = cartsArray.findIndex(cart => cart.id === cartId)
+            }
             cartsArray[cartToUpdate].productos.push(foundProduct)
             await this.saveData(cartsArray)
             return cartsArray[cartToUpdate]

@@ -2,18 +2,16 @@
   {
     "product": "Lapiz",
     "price": "23.75",
-    "stock": "10",
+    "stock": "19",
     "description": "Lapiz para escribir negro",
-    "code": "1234",
     "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/pencil-pen-stationery-school-64.png",
     "id": 1
   },
   {
     "product": "Escuadra",
     "price": "12",
-    "stock": "9",
+    "stock": "56",
     "description": "Escuadra 3'",
-    "code": "1235",
     "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-64.png",
     "id": 2
   },
@@ -66,12 +64,10 @@
   },
   {
     "product": "Globo terraqueo vintage",
-    "price": "123",
-    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-64.png",
-    "description": "Globo terráqueo 20'",
-    "code": "1238",
+    "price": "123.90",
     "stock": "15",
-    "timestamp": 1672437929681,
+    "description": "Globo terráqueo 20'",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-64.png",
     "id": 9
   },
   {

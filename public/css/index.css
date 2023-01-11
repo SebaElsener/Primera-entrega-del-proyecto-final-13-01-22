@@ -28,7 +28,7 @@ h2,
 #productsForm {
     background-color: rgba(45, 87, 153, 0.921);
     width: 830px;
-    padding: 35px;
+    padding: 20px;
     border-radius: 5px;
     margin: 0px auto;
 }
@@ -63,8 +63,7 @@ label {
 }
 
 .sendBtn {
-    margin: 30px auto;
-    margin-bottom: 0px;
+    margin: 12px auto;
     padding: 8px;
     width: 150px;
     font-size: 1rem;
@@ -113,7 +112,7 @@ label {
 
 .productCard {
     width: 200px;
-    height: 300px;
+    height: 330px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -237,8 +236,19 @@ label {
     color: #1b6605;
 }
 
-.emptyCart {
+.emptyCart,
+.buyProductLink,
+.backLink {
     font-size: 1.2rem;
+}
+
+.backLink {
+    margin: 0;
+}
+
+.buyProductLink {
+    margin-top: 15px;
+    display: block;
 }
 
 p {
@@ -259,6 +269,7 @@ p {
 
 .deleteCartBtn,
 .deleteProductBtn {
+    margin: 0;
     width: 110px;
     padding: 5px;
     border: none;
@@ -266,6 +277,10 @@ p {
     background-color: cadetblue;
     color: antiquewhite;
     transition: all .3s;
+}
+
+.deleteCartBtn {
+    height: 26px;
 }
 
 .deleteCartBtn:hover,
@@ -296,4 +311,15 @@ p {
 
 #cartsSection {
     padding-top: 25px;
+}
+
+.cartTitleAndDeleteBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+.cartH2 {
+    margin: 0;
 }

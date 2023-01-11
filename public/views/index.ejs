@@ -10,12 +10,13 @@
     <body>
 
         <main id='main'>
-
-            <section id='cartsSection'>
-                <a class='cartsLink' href='/api/carrito/carritos'>Ver carritos</a>
-            </section>
             
             <%- include('./partials/form') %>
+
+            <section id='cartsSection'>
+                <a class='cartLink' href='/api/carrito'>CARRITO</a>
+                <span class='cartLinkSpan'></span>
+            </section>
 
             <%- include('./partials/cards') %>
 
@@ -24,5 +25,5 @@
         <script src="/js/main.js"></script>
 
     </body>
-    
+
 </html>
